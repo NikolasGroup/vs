@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Вскладчине</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="styles/stars.css">
+        <link rel="stylesheet" href="styles/jquery.formstyler.css">
+        <link rel="stylesheet" href="styles/default.css">
+    </head>
+    <body>
+        
+        <div class="loader">
+            <div class="contpre">
+                <span class="svg_anm"></span>
+            </div>
+        </div>
+        
+        <header>
+            <div class="_left">
+                <a href="/" class="logo">Вскладчине</a>
+                <div class="menu">
+                    <span>Информация<i></i></span>
+                    <nav>
+                        <a href="/about.html">О проекте</a>
+                        <a href="/mission.html">Миссия</a>
+                        <a href="/capabilities.html">Возможности</a>
+                        <a href="/rules.html">Правила и инструкции</a>
+                        <a href="/questions.html">Вопросы и предложения</a>
+                        <a href="/topics.html">Темы для обсуждния</a>
+                        <a href="/authors.html">Приглашаем авторов</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="_right">
+                <a class="btn addFolded"><i></i>Создать складчину</a>
+                <div class="services">
+                    <a href="/dialog.html" class="messages"><i></i></a>
+                    <a href="/notice.html" class="notice"><i></i></a>
+                    <a href="/profile.html" class="profile"></a>
+                </div>
+            </div>
+        </header>
+                
+        <div class="work-area">
+            <h1>Пользователи</h1>
+            <form id="search" action="" method="POST">
+                <input type="text" name="search" placeholder="Поиск">
+                <button id="search_clear"></button>
+                <button id="search_set"></button>
+            </form>
+            <form id="filter" action="" method="POST">
+                <ul class="filter">
+                    <li>
+                        <select>
+                            <option>Все пользователи</option>
+                            <option>Активные</option>
+                            <option>Идет сбор</option>
+                            <option>Завершенные</option>
+                        </select>
+                    </li>
+                    <li>
+                        <select>
+                            <option>Любой статус</option>
+                            <option>Авторская</option>
+                            <option>Стандартная</option>
+                            <option>Оптовая</option>
+                            <option>На заказ</option>
+                        </select>
+                    </li>
+                    <li>
+                        <select>
+                            <option>Любой город</option>
+                            <option>Томск</option>
+                            <option>Северск</option>
+                            <option>Кемерово</option>
+                            <option>Москва</option>
+                        </select>
+                    </li>
+                </ul>
+            </form>
+            <div class="usersList">
+                <div class="user online">
+                    <div class="user__photo"><img src="img/user/1.png"></div>
+                    <div class="user__rate">4,5</div>
+                    <p class="user__name">Konstantinopolskiy</p>
+                    <p class="user__type">складчик</p>
+                    <a class="btn newMsg"><i></i>Написать сообщение</a>
+                </div>
+                <div class="user">
+                    <div class="user__photo"><img src="img/user/1.png"></div>
+                    <div class="user__rate">4,5</div>
+                    <p class="user__name">Konstantinopolskiy</p>
+                    <p class="user__type">складчик</p>
+                    <a class="btn newMsg"><i></i>Написать сообщение</a>
+                </div>
+                <div class="user">
+                    <div class="user__photo"><img src="img/user/1.png"></div>
+                    <div class="user__rate">4,5</div>
+                    <p class="user__name">Konstantinopolskiy</p>
+                    <p class="user__type">складчик</p>
+                    <a class="btn newMsg"><i></i>Написать сообщение</a>
+                </div>
+                <div class="user">
+                    <div class="user__photo"><img src="img/user/1.png"></div>
+                    <div class="user__rate">4,5</div>
+                    <p class="user__name">Konstantinopolskiy</p>
+                    <p class="user__type">складчик</p>
+                    <a class="btn newMsg"><i></i>Написать сообщение</a>
+                </div>
+                <div class="user online">
+                    <div class="user__photo"><img src="img/user/1.png"></div>
+                    <div class="user__rate">4,5</div>
+                    <p class="user__name">Konstantinopolskiy</p>
+                    <p class="user__type">складчик</p>
+                    <a class="btn newMsg"><i></i>Написать сообщение</a>
+                </div>
+                <div class="user">
+                    <div class="user__photo"><img src="img/user/1.png"></div>
+                    <div class="user__rate">4,5</div>
+                    <p class="user__name">Konstantinopolskiy</p>
+                    <p class="user__type">складчик</p>
+                    <a class="btn newMsg"><i></i>Написать сообщение</a>
+                </div>
+            </div>
+            <div class="show-more">
+                <div class="dots container">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <span class="more-text">Показать еще</span>
+            </div>
+        </div>
+        
+        <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="js/jquery.formstyler.min.js"></script>
+        <script type="text/javascript" src="js/default.js"></script>
+    </body>
+</html>
