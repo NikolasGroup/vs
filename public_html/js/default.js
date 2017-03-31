@@ -172,26 +172,10 @@ $(document).ready(function(){
         
         $('.bookmarks a.active').removeClass('active');
         $(this).addClass('active');
-        var url = $(this).attr('href');
-        switch(url){
-            case '#comments':
-                getHTML('ajax.comments.html');
-                break;
-            case '#info':
-                getHTML('ajax.info.html');
-                break;
-            case '#activity':
-                getHTML('ajax.activity.html');
-                break;
-            case '#folders':
-                getHTML('ajax.folders.html');
-                break;
-            case '#valuation':
-                getHTML('ajax.valuation.html');
-                break;
-            default:
-                break;
-        }
+        var url = $(this).attr('href');        
+        url = url.replace("#","");
+        
+        getHTML('ajax.'+url+'.html');        
     });
     //-----------
     
@@ -244,10 +228,12 @@ $(document).ready(function(){
         $('.activity__item').hide();
         $('.activity__item').each(function(){
             var _class = $(this).attr('class').split(' ');
-            _class = _class[1];
-            if($.inArray(_class, filter) >= 0){
-                $(this).show();
+            for(var i =0; i < _class.length; i++){
+                if($.inArray(_class[i], filter) >= 0){
+                    $(this).show();
+                }
             }
+            
         });
     });
     $('body').on('click','.valuationFilter a',function(e){
@@ -266,6 +252,19 @@ $(document).ready(function(){
         },300);        
     });
     //-----------
+    
+    //auth
+    $(document).click( function(event){
+        if( $(event.target).closest(".services").length) 
+          return;
+        $("#auth").fadeOut(200);
+        event.stopPropagation();
+    });
+    $('.services a.profile').on('click',function(e){
+        e.preventDefault();
+        $('#auth').fadeIn(200);
+    });
+    //-------
 });
 
 function getHTML(a){

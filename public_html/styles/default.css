@@ -71,17 +71,20 @@ a:hover {
 }
 /*-----*/
 .btn {
+  font-family: "OpenSansRegular", Arial, sans-serif;
+  display: inline-block;
   box-sizing: border-box;
   width: 220px;
   height: 40px;
   border: 1px solid #3accc6;
+  border-radius: 2px;
   outline: none;
   cursor: pointer;
   color: #FFF;
   background: #3accc6;
   letter-spacing: .5px;
   font-weight: normal;
-  line-height: 40px;
+  line-height: 36px;
   text-align: center;
   -webkit-box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.15);
@@ -146,22 +149,28 @@ a:hover {
   margin: 0 auto;
   max-width: 100%;
 }
+.work-area.small {
+  width: 760px;
+}
 h1 {
   letter-spacing: -1.7px;
   color: #FFF;
   font-size: 36px;
   font-family: "OpenSansSemiBold";
-  margin: 20px 0 0;
+  margin: 20px 0 21px;
   text-align: center;
 }
-input {
+input,
+textarea {
   width: 100%;
   background: none;
-  font-family: "OpenSansRegular", Arial, sans-serif;
+  font-family: "OpenSansLight";
+  font-size: 14px;
   padding-bottom: 14px;
   outline: none;
 }
-input:focus {
+input:focus,
+textarea:focus {
   outline: none;
 }
 /*----- header ------*/
@@ -1130,13 +1139,13 @@ nav a:hover {
 .contributionAmount #setValue {
   font-size: 18px;
   color: #272727;
-  font-weight: 300;
+  font-family: "OpenSansLight";
   margin: 21px 0 10px;
   display: block;
 }
 .contributionAmount > span {
   font-size: 13px;
-  font-weight: 300;
+  font-family: "OpenSansLight";
   color: #a6a6a6;
 }
 .bookmarks {
@@ -1190,7 +1199,7 @@ nav a:hover {
 }
 .cardContent p {
   margin: 0 0 0px;
-  font-weight: 300;
+  font-family: "OpenSansLight";
 }
 .cardContent img {
   max-width: 100%;
@@ -1249,7 +1258,7 @@ nav a:hover {
 .cardContent .channel li.clear a,
 .cardContent .activityFilter li.clear a,
 .cardContent .valuationFilter li.clear a {
-  font-weight: 300;
+  font-family: "OpenSansLight";
 }
 .cardContent .channel li.clear i,
 .cardContent .activityFilter li.clear i,
@@ -1285,7 +1294,7 @@ nav a:hover {
 }
 .cardContent .commentCount {
   font-size: 16px;
-  font-weight: 300;
+  font-family: "OpenSansLight";
   margin: 0 0 30px;
 }
 .cardContent .commentsList {
@@ -1311,7 +1320,7 @@ nav a:hover {
   border: none;
   border-bottom: 1px solid #EDEDED;
   font-size: 14px;
-  font-weight: 300;
+  font-family: "OpenSansLight";
   color: #272727;
   margin-bottom: 20px;
 }
@@ -1354,9 +1363,8 @@ nav a:hover {
   margin-left: 10px;
   font-size: 14px;
   vertical-align: middle;
-  font-weight: 300;
+  font-family: "OpenSansLight";
   color: #a6a6a6;
-  font-family: "OpenSansRegular";
 }
 .userMsg .base i {
   width: 10px;
@@ -1370,9 +1378,8 @@ nav a:hover {
   cursor: pointer;
   float: right;
   font-size: 13px;
-  font-weight: 300;
+  font-family: "OpenSansLight";
   color: #a6a6a6;
-  font-family: "OpenSansRegular";
 }
 .userMsg .like i {
   width: 12px;
@@ -1394,12 +1401,12 @@ nav a:hover {
 }
 .userMsg .date {
   font-size: 13px;
-  font-weight: 300;
+  font-family: "OpenSansLight";
   color: #a6a6a6;
   margin-bottom: 5px;
 }
 .userMsg .text {
-  font-weight: 300;
+  font-family: "OpenSansLight";
 }
 .userMsg .answer {
   position: absolute;
@@ -1457,15 +1464,18 @@ nav a:hover {
 }
 .activity__item .date {
   font-size: 13px;
-  font-weight: 300;
+  font-family: "OpenSansLight";
   color: #a6a6a6;
   margin-bottom: 5px;
 }
 .activity__item .text {
   font-size: 13px;
-  font-weight: 300;
+  font-family: "OpenSansLight";
   height: 20px;
   overflow: hidden;
+}
+.activity__item .text + .new_user {
+  margin-top: 5px;
 }
 .activity__item .new_user {
   font-size: 18px;
@@ -1509,6 +1519,19 @@ nav a:hover {
   height: 10px;
   background: #de4444;
   border-radius: 100%;
+}
+.activity__item .btn {
+  margin-top: 10px;
+  width: 230px;
+}
+.activity__item .btn i {
+  width: 18px;
+  height: 17px;
+  background: url('../img/icons/star-btn.png');
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 11px;
+  margin-right: 15px;
 }
 .stars {
   padding: 0;
@@ -1565,4 +1588,476 @@ nav a:hover {
 #only_4,
 #only_5 {
   display: none;
+}
+/*---------*/
+/*noticePage*/
+.noticePage {
+  width: 100%;
+  background: #FFF;
+  border-radius: 4px;
+  padding: 20px;
+  box-sizing: border-box;
+  display: inline-block;
+}
+/*----------*/
+/*dialog*/
+.dialogList {
+  width: 320px;
+  background: #FFF;
+  padding: 20px 0;
+  box-sizing: border-box;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.dialogList img {
+  float: left;
+  width: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+}
+.dialogList__info {
+  width: calc(100% - 50px);
+  float: left;
+  font-size: 17px;
+  font-family: "OpenSansSemiBold";
+}
+.dialogList ul {
+  margin: 0;
+  padding: 0;
+}
+.dialogList li {
+  list-style-type: none;
+  overflow: hidden;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.dialogList li.open {
+  background: #F5F5F5;
+}
+.dialogList li.newMsg span {
+  color: #3accc6;
+}
+.dialogList h2 {
+  font-size: 16px;
+  font-family: "OpenSansSemiBold";
+  padding: 0 20px;
+  margin: 0 0 30px;
+}
+.dialogList span {
+  display: block;
+  font-size: 13px;
+  font-family: "OpenSansLight";
+  color: #a6a6a6;
+}
+.messagesBlock {
+  background: #FFF;
+  border-radius: 4px;
+  width: calc(100% - 350px);
+  box-sizing: border-box;
+  padding: 20px;
+}
+.messagesBlock h2 {
+  font-size: 16px;
+  font-family: "OpenSansSemiBold";
+  margin: 0 0 30px;
+}
+.messagesBlock .userMsg {
+  padding-bottom: 0;
+}
+.messagesBlock hr {
+  margin: 20px -20px;
+  border: none;
+  height: 2px;
+  background: #EDEDED;
+}
+.messagesBlock #newMSG .btn {
+  float: right;
+  width: 140px;
+}
+.messagesBlock #newMSG textarea {
+  float: left;
+  padding: 10px 0;
+  box-sizing: border-box;
+  border: none;
+  height: 40px;
+  width: calc(100% - 250px);
+  resize: none;
+  overflow: hidden;
+}
+/*------*/
+/*auth*/
+.authorization {
+  position: absolute;
+  top: 90px;
+  right: 20px;
+  width: 290px;
+  background: #FFF;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 15px 25px 30px;
+  -webkit-box-shadow: 0px 20px 25px 0px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0px 20px 25px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 20px 25px 0px rgba(0, 0, 0, 0.05);
+  display: none;
+}
+.authorization.small {
+  width: 200px;
+  padding: 20px;
+}
+.authorization.small li {
+  width: 100%;
+  margin: 0 0 9px;
+}
+.authorization.small a {
+  background: none;
+  width: auto;
+  height: auto;
+  color: #272727;
+}
+.authorization.small a:hover {
+  color: #3accc6;
+}
+.authorization p {
+  font-size: 16px;
+  margin: 0 0 14px;
+  text-align: center;
+  color: #3accc6;
+}
+.authorization ul {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.authorization li {
+  list-style-type: none;
+  float: left;
+  margin: 0 10px 0 0;
+}
+.authorization li:last-child {
+  margin-right: 0!important;
+}
+.authorization a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-image: url('../img/icons/social.png');
+  padding: 0!important;
+}
+.authorization a.fb {
+  background-position: 0 0;
+}
+.authorization a.fb:hover,
+.authorization a.fb.select {
+  background-position: 0 -40px;
+}
+.authorization a.vk {
+  background-position: -50px 0;
+}
+.authorization a.vk:hover,
+.authorization a.vk.select {
+  background-position: -50px -40px;
+}
+.authorization a.tw {
+  background-position: -100px 0;
+}
+.authorization a.tw:hover,
+.authorization a.tw.select {
+  background-position: -100px -40px;
+}
+.authorization a.gp {
+  background-position: -150px 0;
+}
+.authorization a.gp:hover,
+.authorization a.gp.select {
+  background-position: -150px -40px;
+}
+.authorization a.ok {
+  background-position: -200px 0;
+}
+.authorization a.ok:hover,
+.authorization a.ok.select {
+  background-position: -200px -40px;
+}
+/*----*/
+/*profilePage*/
+.profilePage._left {
+  width: 300px;
+}
+.profilePage._right {
+  width: 660px;
+}
+.profilePage .user {
+  border-radius: 4px 4px 0 0;
+  margin: 0;
+}
+.profilePage .user__moreInfo {
+  display: block;
+  border-radius: 0 0 4px 4px;
+}
+.profilePage .user__moreInfo p {
+  color: #FFF;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  margin-top: 30px;
+  text-align: center;
+}
+.profilePage .user__moreInfo p img {
+  display: table;
+  margin: 0 auto 8px;
+}
+.settingsBlock {
+  margin: 0 0 30px;
+}
+.settingsBlock:last-child {
+  margin-bottom: 0;
+}
+.settingsBlock .auth {
+  display: inline-block;
+  overflow: hidden;
+  margin: 0 10px 0 0;
+  vertical-align: middle;
+  padding: 0;
+}
+.settingsBlock .auth li {
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-image: url('../img/icons/social.png');
+  list-style-type: none;
+  float: left;
+  margin: 0 10px 0 0;
+}
+.settingsBlock .auth li:last-child {
+  margin-right: 0!important;
+}
+.settingsBlock .auth li.fb {
+  background-position: 0 0;
+}
+.settingsBlock .auth li.fb.select {
+  background-position: 0 -40px;
+}
+.settingsBlock .auth li.vk {
+  background-position: -50px 0;
+}
+.settingsBlock .auth li.vk.select {
+  background-position: -50px -40px;
+}
+.settingsBlock .auth li.tw {
+  background-position: -100px 0;
+}
+.settingsBlock .auth li.tw.select {
+  background-position: -100px -40px;
+}
+.settingsBlock .auth li.gp {
+  background-position: -150px 0;
+}
+.settingsBlock .auth li.gp.select {
+  background-position: -150px -40px;
+}
+.settingsBlock .auth li.ok {
+  background-position: -200px 0;
+}
+.settingsBlock .auth li.ok.select {
+  background-position: -200px -40px;
+}
+.settingsBlock label {
+  display: inline-block;
+  vertical-align: middle;
+  font-family: "OpenSansLight";
+  font-size: 13px;
+}
+.settingsBlock .btn {
+  margin-right: 10px;
+}
+.settingsBlock .btn.small {
+  width: 140px;
+}
+.settingsBlock input {
+  border: none;
+  width: 305px;
+  border-bottom: 1px solid #EDEDED;
+  margin-bottom: 22px;
+}
+.settingsBlock p {
+  margin-bottom: 20px;
+}
+.userAccount {
+  margin: 0 0 20px;
+}
+.userAccount p {
+  font-size: 26px;
+  font-family: "OpenSansRegular";
+  color: #3accc6;
+}
+#replenishAccount {
+  margin: 0 0 50px;
+  width: 100%;
+}
+#replenishAccount input {
+  border: none;
+  width: 305px;
+  border-bottom: 1px solid #EDEDED;
+  margin-bottom: 22px;
+}
+#replenishAccount .btn {
+  margin-right: 9px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 250px;
+}
+#replenishAccount .btn i {
+  width: 14px;
+  height: 11px;
+  background: url('../img/icons/replenishAccount.png');
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 15px;
+}
+#replenishAccount label {
+  display: inline-block;
+  vertical-align: middle;
+  font-family: "OpenSansLight";
+  font-size: 13px;
+}
+.yourCards > h2 {
+  margin: 0 0 20px;
+}
+.yourCards ul {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.yourCards li {
+  list-style-type: none;
+  margin: 0 0 20px;
+}
+.yourCards li:last-child {
+  margin-bottom: 0;
+}
+.yourCards span {
+  font-family: "OpenSansLight";
+  color: #a6a6a6;
+  display: block;
+}
+.yourCards a {
+  font-family: "OpenSansSemiBold";
+  display: inline-block;
+}
+.yourCards a:hover {
+  color: #3accc6;
+}
+.settingsNotice {
+  margin: 0 0 30px;
+}
+.settingsNotice h2 {
+  margin: 0 0 25px;
+}
+.settingsNotice:last-child {
+  margin-bottom: 0;
+}
+.settingsNotice input {
+  border: none;
+  width: 305px;
+  border-bottom: 1px solid #EDEDED;
+  margin-bottom: 22px;
+}
+.settingsNotice .btn {
+  margin-right: 9px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 140px;
+}
+.settingsNotice .btn i {
+  width: 14px;
+  height: 11px;
+  background: url('../img/icons/replenishAccount.png');
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 15px;
+}
+.settingsNotice label {
+  display: inline-block;
+  vertical-align: middle;
+  font-family: "OpenSansLight";
+  font-size: 13px;
+}
+.settingsNotice span {
+  display: block;
+  font-family: "OpenSansLight";
+  font-size: 13px;
+  color: #a6a6a6;
+}
+.settingsNotice__checkbox {
+  width: 100%;
+  margin: 0 0 20px;
+}
+.settingsNotice__checkbox:last-child {
+  margin-bottom: 0;
+}
+/*-----------*/
+/* Cначала обозначаем стили для IE8 и более старых версий
+т.е. здесь мы немного облагораживаем стандартный чекбокс. */
+.checkbox {
+  vertical-align: top;
+  margin: 0 3px 0 0;
+  width: 17px;
+  height: 17px;
+}
+/* Это для всех браузеров, кроме совсем старых, которые не поддерживают
+селекторы с плюсом. Показываем, что label кликабелен. */
+.checkbox + label {
+  cursor: pointer;
+}
+/* Далее идет оформление чекбокса в современных браузерах, а также IE9 и выше.
+Благодаря тому, что старые браузеры не поддерживают селекторы :not и :checked,
+в них все нижеследующие стили не сработают. */
+/* Прячем оригинальный чекбокс. */
+.checkbox:not(checked) {
+  position: absolute;
+  opacity: 0;
+}
+.checkbox:not(checked) + label {
+  position: relative;
+  /* будем позиционировать псевдочекбокс относительно label */
+  padding: 0 0 0 50px;
+  /* оставляем слева от label место под псевдочекбокс */
+}
+/* Оформление первой части чекбокса в выключенном состоянии (фон). */
+.checkbox:not(checked) + label:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 20px;
+  border-radius: 10px;
+  background: #F5F5F5;
+}
+/* Оформление второй части чекбокса в выключенном состоянии (переключатель). */
+.checkbox:not(checked) + label:after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 10px;
+  background: #FFF;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  transition: all .2s;
+  /* анимация, чтобы чекбокс переключался плавно */
+}
+/* Меняем фон чекбокса, когда он включен. */
+.checkbox:checked + label:before {
+  background: #3accc6;
+}
+/* Сдвигаем переключатель чекбокса, когда он включен. */
+.checkbox:checked + label:after {
+  left: 22px;
 }

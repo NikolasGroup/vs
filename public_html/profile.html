@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Вскладчине</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="styles/stars.css">
+        <link rel="stylesheet" href="styles/jquery.formstyler.css">
+        <link rel="stylesheet" href="styles/default.css">
+    </head>
+    <body>
+        
+        <div class="loader">
+            <div class="contpre">
+                <span class="svg_anm"></span>
+            </div>
+        </div>
+        
+        <header>
+            <div class="_left">
+                <a href="/" class="logo">Вскладчине</a>
+                <div class="menu">
+                    <span>Информация<i></i></span>
+                    <nav>
+                        <a href="/about.html">О проекте</a>
+                        <a href="/mission.html">Миссия</a>
+                        <a href="/capabilities.html">Возможности</a>
+                        <a href="/rules.html">Правила и инструкции</a>
+                        <a href="/questions.html">Вопросы и предложения</a>
+                        <a href="/topics.html">Темы для обсуждния</a>
+                        <a href="/authors.html">Приглашаем авторов</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="_right">
+                <a class="btn addFolded"><i></i>Создать складчину</a>
+                <div class="services">
+                    <a href="/dialog.html" class="messages messages_new"><i></i></a>
+                    <a href="/notice.html" class="notice notice_new"><i></i></a>
+                    <a href="/profile.html" class="profile"></a>
+                    <div class="authorization small" id="auth">
+                        <ul>
+                            <li><a href="myCards.html">Мои складчины</a></li>
+                            <li><a href="profile.html">Настройки</a></li>
+                            <li><a href="#" class="exit">Выход</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <div class="work-area">
+            <h1>Профиль</h1>
+            <div class="profilePage _left">
+                <div class="user">
+                    <div class="user__photo"><a href="#"><img src="img/user/1.png"></a></div>
+                    <div class="user__rate">4,5</div>
+                    <p class="user__name">Konstantinopolskiy</p>
+                    <p class="user__type">складчик</p>
+                    <a class="btn newMsg"><i></i>Написать сообщение</a>
+                    <div class="user__moreInfo">
+                        <span>Участие</span><span>24</span>
+                        <span>Оплачено</span><span>23</span>
+                        <span>Проведено</span><span>7</span>
+                        <span>Зарегистрирован</span><span>27.03.2016</span>
+                        <p><img src="img/icons/IconEye.png">Так видят вашу карточку другие пользователи</p>
+                    </div>
+                </div>
+            </div>
+            <div class="profilePage _right">
+                <ul class="bookmarks">
+                    <li><a href="#settings" class="active">Настройки</a></li>
+                    <li><a href="#pay">Оплата</a></li>
+                    <li><a href="#notice">Оповещения</a></li>
+                    <li><a href="#my_folders">Подписки</a></li>
+                </ul>
+                <div class="cardContent">
+                    <div class="content">
+                        <div class="settingsNotice">
+                            <h2>Общие настройки</h2>
+                            <div class="settingsNotice__checkbox">
+                                <input type="checkbox" class="checkbox" name="importantNotifications" checked="checked" id="importantNotifications">
+                                <label for="importantNotifications">— важные оповещения</label>
+                            </div>
+                            <div class="settingsNotice__checkbox">
+                                <input type="checkbox" class="checkbox" name="fromAdministrator" checked="checked" id="fromAdministrator">
+                                <label for="fromAdministrator">— сообщения от администратора</label>
+                            </div>
+                            <div class="settingsNotice__checkbox">
+                                <input type="checkbox" class="checkbox" name="duplicateEmail" id="duplicateEmail">
+                                <label for="duplicateEmail">— дублировать на электронную почту</label>
+                            </div>
+                        </div>
+                        <div class="settingsNotice">
+                            <h2>Электронная почта</h2>
+                            <form id="newEmail" method="POST" action="">
+                                <input type="email" name="ml">
+                                <label>— подтверждена</label>
+                                <div class="clearfix"></div>
+                                <button class="btn">Изменить</button>
+                            </form>
+                        </div>
+                        <div class="settingsNotice">
+                            <div class="settingsNotice__checkbox">
+                                <input type="checkbox" class="checkbox" name="cityYES" id="cityYES">
+                                <label for="cityYES">— ограничить оповещения по местоположению</label>
+                            </div>
+                            <form id="city" method="POST" action="">
+                                <input type="text" name="city" value="Выберите город" disabled>
+                                <span>Настройка распространяется на категории с указанием города. Отключите настройку чтобы получать уведомления независимо от местоположения.</span>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        
+        <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="js/jquery.formstyler.min.js"></script>
+        <script type="text/javascript" src="js/default.js"></script>
+    </body>
+</html>

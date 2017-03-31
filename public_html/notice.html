@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Вскладчине</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="styles/stars.css">
+        <link rel="stylesheet" href="styles/jquery.formstyler.css">
+        <link rel="stylesheet" href="styles/default.css">
+    </head>
+    <body>
+        
+        <div class="loader">
+            <div class="contpre">
+                <span class="svg_anm"></span>
+            </div>
+        </div>
+        
+        <header>
+            <div class="_left">
+                <a href="/" class="logo">Вскладчине</a>
+                <div class="menu">
+                    <span>Информация<i></i></span>
+                    <nav>
+                        <a href="/about.html">О проекте</a>
+                        <a href="/mission.html">Миссия</a>
+                        <a href="/capabilities.html">Возможности</a>
+                        <a href="/rules.html">Правила и инструкции</a>
+                        <a href="/questions.html">Вопросы и предложения</a>
+                        <a href="/topics.html">Темы для обсуждния</a>
+                        <a href="/authors.html">Приглашаем авторов</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="_right">
+                <a class="btn addFolded"><i></i>Создать складчину</a>
+                <div class="services">
+                    <a href="/dialog.html" class="messages messages_new"><i></i></a>
+                    <a href="/notice.html" class="notice notice_new"><i></i></a>
+                    <a href="/profile.html" class="profile"></a>
+                    <div class="authorization small" id="auth">
+                        <ul>
+                            <li><a href="myCards.html">Мои складчины</a></li>
+                            <li><a href="profile.html">Настройки</a></li>
+                            <li><a href="#" class="exit">Выход</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <div class="work-area small">
+            <h1>Уведомления</h1>
+            <div class="noticePage cardContent">
+                <ul class="activityFilter">
+                    <li><a href="#all" class="all active">Все</a></li>
+                    <li><a href="#activity__item_system">Важное</a></li>
+                    <li><a href="#activity__item_my">Мои складчины</a></li>
+                    <li><a href="#activity__item_participate">Участвую</a></li>
+                    <li><a href="#activity__item_follow">Отслеживаемое</a></li>
+                    <li class="clear"><a href="#all" class="clearAll"><i></i>сбросить</a></li>
+                </ul>
+                <ul class="activity__items">
+                    <li>
+                        <h2>Новое</h2>
+                        <hr>
+                        <div class="activity__item activity__item_like activity__item_follow">
+                            <div class="name">katrina понравился ваш комментарий</div>
+                            <div class="date">26 октября 2016 г., 14:32</div>
+                            <div class="text">Задача организации, в особенности же консультация с широким активом требуют от нас анализа позиций, занимаемых участниками. Задача организации, в особенности же консультация с широким активом требуют от нас анализа позиций, занимаемых участниками в отношении поставленных задач.</div>
+                        </div>
+                        <div class="activity__item activity__item_comment activity__item_my">
+                            <div class="name">zayac оставил комментарий</div>
+                            <div class="date">26 октября 2016 г., 14:32</div>
+                            <div class="text">Задача организации, в особенности же консультация с широким активом требуют от нас анализа позиций, занимаемых участниками. Задача организации, в особенности же консультация с широким активом требуют от нас анализа позиций, занимаемых участниками в отношении поставленных задач.</div>
+                        </div>
+                        <div class="activity__item activity__item_system activity__item_participate">
+                            <div class="name">Начался сбор</div>
+                            <div class="date">26 октября 2016 г., 14:32</div>                                            
+                        </div>
+                        <div class="activity__item activity__item_system activity__item_my">
+                            <div class="name">Складчина завершена</div>
+                            <div class="date">26 октября 2016 г., 14:32</div>      
+                            <div class="text">
+                                Потрясающие курсы по Visual Studio 2012
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <h2>23.04.17</h2>
+                        <hr>
+                        <div class="activity__item activity__item_system">
+                            <div class="name">Запрос на экспертную оценку</div>
+                            <div class="date">26 октября 2016 г., 14:32</div>
+                            <div class="text">Потрясающие курсы по Visual Studio 2012</div>
+                            <a href="#" class="btn"><i></i>Оценить складчину</a>
+                        </div>
+                        <div class="activity__item activity__item_like activity__item_follow">
+                            <div class="name">katrina понравился ваш комментарий</div>
+                            <div class="date">26 октября 2016 г., 14:32</div>
+                            <div class="text">Задача организации, в особенности же консультация с широким активом требуют от нас анализа позиций, занимаемых участниками. Задача организации, в особенности же консультация с широким активом требуют от нас анализа позиций, занимаемых участниками в отношении поставленных задач.</div>
+                        </div>
+                        <div class="activity__item activity__item_system activity__item_participate">
+                            <div class="name">Складчина оценена пользователем</div>
+                            <div class="date">26 октября 2016 г., 14:32</div>     
+                            <div class="text">Потрясающие курсы по Visual Studio 2012</div>
+                            <div class="new_user"><img src="img/user/1.png"> Оля Ф.</div>
+                        </div>
+                        <div class="activity__item activity__item_system activity__item_my">
+                            <div class="name">Ваша складчина оценена экспертом</div>
+                            <div class="date">26 октября 2016 г., 14:32</div>     
+                            <div class="text">Потрясающие курсы по Visual Studio 2012</div>
+                            <div class="new_user"><img src="img/user/1.png"> Оля Ф.</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>            
+        </div>
+        
+        <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="js/jquery.formstyler.min.js"></script>
+        <script type="text/javascript" src="js/default.js"></script>
+    </body>
+</html>
